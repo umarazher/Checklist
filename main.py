@@ -1,9 +1,16 @@
-from flask import Flask , render_template
+from flask import Flask, render_template, request
 
 app=Flask(__name__)
 
-@app.route('/login',methods =['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
+    print(request.method)
+    if request.method == 'POST':
+        email = request.form.get("email")
+        passwd = request.form.get("password")
+        print(email)
+        print(passwd)
+        return render_template("validation.html")
     return render_template('login.html')
 
 
