@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vanta Admin</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='vendors/css/vendor.bundle.base.css')}}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/layout/style.css')}}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}" />
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #1a1a1a;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #header img {
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    #header .buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    #header .buttons a {
+      color: #f1f1f1;
+      text-decoration: none;
+      padding: 6px 12px;
+      margin: 0 5px;
+      border: 1px solid #808080;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    #search-form {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    #search-form input[type="text"] {
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #333;
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      border-radius: 6px;
+      width: 600px;
+    }
+
+    #search-form input[type="submit"] {
+      background-color: #4285F4;
+      color: #f1f1f1;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #1a1a1a;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="header">
+    <img src="google_logo.png" alt="Google Logo">
+    <div class="buttons">
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+    </div>
+  </div>
+  <form id="search-form">
+    <input type="text" name="q" placeholder="Search the web">
+    <input type="submit" value="Google Search">
+  </form>
+  <div id="footer">
+    &copy; 2023 Google
+  </div>
+</body>
+</html>
+    
+
+    
+  
+
+
+
+
+
+  <script src="{{url_for('static',filename='vendors/js/vendor.bundle.base.js')}}"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="{{url_for('static',filename='js/off-canvas.js')}}"></script>
+  <script src="{{url_for('static',filename='js/hoverable-collapse.js')}}"></script>
+  <script src="{{url_for('static',filename='js/template.js')}}"></script>
+  <script src="{{url_for('static',filename='js/settings.js')}}"></script>
+  <script src="{{url_for('static',filename='js/todolist.js')}}"></script>
+</body>
+
+</html>
